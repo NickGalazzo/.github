@@ -19,6 +19,8 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build
+      - name: Test
+        run: dotnet test
       - name: Package
         run: dotnet pack --configuration Release
       - name: Publish
